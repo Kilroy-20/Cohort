@@ -1,10 +1,309 @@
 * {
+
     padding: 0;
+
     margin: 0;
+
     box-sizing: border-box;
+
 }
 
+
+
+.miniver-regular {
+
+  font-family: "Miniver", cursive;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+}
+
+
+
+
+
 html, body {
+
     height: 100%;
+
     width: 100%;
+
+    background-color: #050505;
+
+    color: rgb(17, 244, 244);
+
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+
+    background-size: 20px 20px;
+
+}
+
+
+
+.mainDiv {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 10px;
+
+    gap: 20px;
+
+}
+
+
+
+.header{
+
+    display: flex;
+
+    background-color: rgb(0, 0, 0);
+
+    padding: 5px;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+}
+
+.inputDiv{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 0;
+
+    align-items: center;
+
+    padding: 5px;
+
+    background-color: rgba(255, 255, 255, 0.02);
+
+}
+
+
+
+.inputBox {
+
+    font-size: 1.5rem;
+
+    background-color: #1e1e1e;
+
+    outline: none;
+
+    border: 1px solid #ccc;
+
+    padding: 10px 15px;
+
+    border-top-right-radius: 0;
+
+    border-bottom-right-radius: 0;
+
+    border-right: none;
+
+    color: #ccc;
+
+}
+
+
+
+.addBtn{
+
+    padding: 10px 20px;
+
+    font-size: 1.5rem;
+
+    background-color: #1e1e1e;
+
+    color: #ccc;
+
+    border: 1px solid #ccc;
+
+    border-top-left-radius: 0;
+
+    border-bottom-left-radius: 0;
+
+    border-left: none;
+
+    transition: background-color 0.3s;
+
+}
+
+
+
+.addBtn:hover{
+
+    transform: scale(1.1);
+    background-color: #494949;
+    color: #0ff;
+
+}
+
+
+
+.title {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 2.5rem;
+
+}
+
+
+
+.taskContainer{
+
+    display: grid;
+
+    grid-auto-flow: column;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    grid-template-rows: repeat(8,1fr);
+
+    padding: 15px;
+
+    gap: 10px;
+
+    /* justify-content: center; */
+
+    overflow-wrap: break-word;
+
+}
+
+
+
+.task {
+
+ 
+
+    height: 100px;        
+
+    width: 400px;          
+
+    position: relative;
+
+    background-color: #111;
+
+    border: 1px solid #333;
+
+    padding: 15px;
+
+    color: #0ff;
+
+    font-family: 'Miniver', cursive;
+
+    word-wrap: break-word;
+
+    padding-right: 35px;
+
+    overflow: hidden;
+
+    transition: all 0.2s;
+
+}
+
+
+
+
+
+.task:hover {
+
+    background-color: #404040;
+
+    border-color: #fff;
+
+    overflow-y: auto;
+
+}
+
+
+
+.deleteBtn {
+
+
+
+    position: absolute;
+
+    top: 8px;
+
+    right: 8px;
+
+    background-color: #ff3333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 50%;
+
+    width: 24px;
+
+    height: 24px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    z-index: 10;
+
+}
+
+
+
+.deleteBtn:hover {
+
+    background-color: #ff0000;
+
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+.task::-webkit-scrollbar {
+
+    width: 6px;
+
+}
+
+
+
+
+
+.task::-webkit-scrollbar-thumb {
+
+    background-color: #555;
+
+   
+
+}
+
+
+
+
+
+.task::-webkit-scrollbar-thumb:hover {
+
+    background-color: #888;
+
 }
